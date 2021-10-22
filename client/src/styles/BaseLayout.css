@@ -71,7 +71,7 @@ body{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #layout div{
+    #layout {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -95,29 +95,6 @@ body{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #layout div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    #children{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-}
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px){

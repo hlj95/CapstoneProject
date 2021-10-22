@@ -8,15 +8,21 @@ import Goals from './Goals'
 function App() {
     return (
         <div className="App">
-            <div>
-                <h2>POSTS</h2>
-                <Posts /></div>
-            
             <div id="newslist">
                 <h2>RECENT NEWS</h2>
-                <NewsList /></div>
-            <div><h2>MY GOALS</h2>
-                <Goals /></div>    
+                <NewsList />
+            </div>
+
+            <div>
+                <h2>POSTS</h2>
+                <Posts />
+            </div>
+            
+          
+            <div>
+                <h2>MY GOALS</h2>
+                <Goals />
+            </div>    
                 
             <br></br>
         </div>
