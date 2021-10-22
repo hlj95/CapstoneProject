@@ -39,7 +39,7 @@ function AddPost(props) {
             <input type="text" name="image" placeholder="SIGNATURE"onChange={handleOnChange}  />
             <br></br>
             
-            <button onClick={newPost}> <img src="https://img.icons8.com/nolan/64/sent.png"/><br></br>LETS GO!</button>
+            <button onClick={newPost}> <img src="https://img.icons8.com/nolan/64/sent.png" alt="share post"/><br></br>SHARE!</button>
         </div>
     )
 }

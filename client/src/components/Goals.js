@@ -84,7 +84,7 @@ function Goals(props) {
             </div>
 
             <div>
-            <button onClick = {() => handleGoalDelete(goal)}><img src="https://img.icons8.com/nolan/64/delete.png"/></button>
+            <button onClick = {() => handleGoalDelete(goal)}><img src="https://img.icons8.com/nolan/64/delete.png" alt="delete"/></button>
             </div>
             
             

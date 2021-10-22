@@ -75,7 +75,7 @@ function EditProfile(props) {
             <input type="text" name="link5" value={info.link5} placeholder="InstagramURL" onChange={handleUserChange} />
             <br></br>
             <br></br>
-            <button id="save button"onClick={saveInfo}><img src="https://img.icons8.com/nolan/96/save.png"/><br></br>SAVE</button>
+            <button id="save button"onClick={saveInfo}><img src="https://img.icons8.com/nolan/96/save.png" alt="save"/><br></br>SAVE</button>
             </div>
             
 

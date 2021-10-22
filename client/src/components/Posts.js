@@ -11,15 +11,15 @@ function Posts(props) {
         props.onAllPosts()
     }, [])
 
-    const handlePostDelete = (post) => {
-        fetch(`https://frozen-mountain-21176.herokuapp.com/api/post/${post.id}`, {
-            method:'DELETE'
-        })
-            .then(response => response.json())
-            .then(result => {
-                props.onAllPosts()
-            })
-    }
+    // const handlePostDelete = (post) => {
+    //     fetch(`https://frozen-mountain-21176.herokuapp.com/api/post/${post.id}`, {
+    //         method:'DELETE'
+    //     })
+    //         .then(response => response.json())
+    //         .then(result => {
+    //             props.onAllPosts()
+    //         })
+    // }
 
     const postItems = props.posts.map(post => {
         return <ul id="postUL" key= {post.id}>
@@ -27,14 +27,13 @@ function Posts(props) {
                 <br></br>
                 <div id="postBody">{post.body_text}</div>
                 <br></br>
-                <div><img src="https://img.icons8.com/nolan/64/developer.png"/><br></br>{post.image}</div>
+                <div><img src="https://img.icons8.com/nolan/64/developer.png" alt="user" /><br></br>{post.image}</div>
                 <div>{post.user_id}</div>
                 <br></br>
                 <div>{post.updatedAt}</div>
                 <br></br>
                 <div>
-                <button><img src="https://img.icons8.com/nolan/64/ok-hand.png"/><br></br>coo!</button>
-                <button><img src="https://img.icons8.com/nolan/64/thumbs-down.png"/><br></br>wack!</button>
+
                 </div>
                 
                 {/* <button onClick = {() => handlePostDelete(post)}>Delete Blog</button> */}

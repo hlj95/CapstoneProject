@@ -108,7 +108,7 @@ function AddGoal(props) {
                 </div>
             </div>
 
-            <button onClick={newGoal}><img src="https://img.icons8.com/nolan/96/lock.png"/><br></br>CREATE</button>
+            <button onClick={newGoal}><img src="https://img.icons8.com/nolan/96/lock.png" alt="create"/><br></br>CREATE</button>
 
         </div>
     )
