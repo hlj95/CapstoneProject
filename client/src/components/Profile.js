@@ -1,6 +1,6 @@
 
 
-import { connect, useSelector } from 'react-redux';
+import { connect} from 'react-redux';
 import { useEffect, useState } from 'react';
 import * as actionCreators from '../store/creators/actionCreators';
 import '../styles/Profile.css'
@@ -64,7 +64,10 @@ function Profile(props){
                 <div>
                 <h2>About Me :
                     <br></br>
-                    {edit.username}</h2>
+                    {edit.first_name}
+                    <br></br>
+                    {edit.last_name}
+                    </h2>
                 <div id="aboutYou">{edit.about_me}</div>
                 <div>
                 <h2>Project Contributions</h2>

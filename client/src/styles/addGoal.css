@@ -1,0 +1,138 @@
+#body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+}
+
+#mainGoal {
+    height: fit-content;
+}
+.addGoal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+}
+input{
+    text-align: center;
+    margin: auto;
+    width: 22em;
+    height: 1.7em;
+    font-size: large;
+    border-radius: 7px;
+}
+textarea {
+    border-radius: 7px;
+}
+.addGoal div{
+    margin: .5em;
+    background-color: rgba(0, 0, 0, 0.516);
+    padding: .3em;
+    border-style: solid; 
+    border-radius: 15px;
+    border-color:rgb(127, 34, 204);
+    border-width: .07em; 
+    text-align: center;
+}
+button{
+    align-self: center;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    font-weight: 900;
+}
+#define {
+    margin-top: .3em;
+    height:5em;
+    width: 15.3em;
+    text-align: center;
+    font-size: xx-large;
+}
+h4 {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+#giveTitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 35%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.516);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+#gives {
+    background-color: rgba(250, 235, 215, 0);
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#mainTitle {
+    background-color: rgba(250, 235, 215, 0);
+    border-style: none;
+}
+
+@media only screen and (min-width:100px) and (max-width:415px) {
+    #body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+    }
+    input{
+        width: 12em;
+    }
+    #define{
+        width: 8em;
+    }
+}
+
+@media only screen and (min-width:416px)and (max-width:767px){
+    #body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    input{
+        width: 15em;
+    }
+    #define{
+        width: 10em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+    }
+}

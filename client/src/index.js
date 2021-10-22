@@ -15,6 +15,7 @@ import Profile from './components/Profile';
 import App from './components/App';
 import Login from './components/Login';
 import Register from './components/Register';
+import AddGoal from './components/AddGoal';
 
 
 
@@ -35,6 +36,7 @@ ReactDOM.render(
           <Route component={ AddPost } path="/create-a-post" />
           <Route component={ EditProfile} path="/edit-profile" />
           <Route component={ Profile } path="/profile" />
+          <Route component={ AddGoal } path="/add-goal" />
         </BaseLayout>
       </BrowserRouter>
     </Provider>

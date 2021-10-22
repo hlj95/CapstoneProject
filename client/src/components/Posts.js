@@ -12,7 +12,7 @@ function Posts(props) {
     }, [])
 
     const handlePostDelete = (post) => {
-        fetch(`http://localhost:8080/api/post/${post.id}`, {
+        fetch(`https://frozen-mountain-21176.herokuapp.com/api/post/${post.id}`, {
             method:'DELETE'
         })
             .then(response => response.json())
@@ -26,9 +26,18 @@ function Posts(props) {
             <li  id="postLI">
                 <br></br>
                 <div id="postBody">{post.body_text}</div>
-                <div><img src={post.image}></img></div>
+                <br></br>
+                <div><img src="https://img.icons8.com/nolan/64/developer.png"/><br></br>{post.image}</div>
                 <div>{post.user_id}</div>
-                <button onClick = {() => handlePostDelete(post)}>Delete Blog</button>
+                <br></br>
+                <div>{post.updatedAt}</div>
+                <br></br>
+                <div>
+                <button><img src="https://img.icons8.com/nolan/64/ok-hand.png"/><br></br>coo!</button>
+                <button><img src="https://img.icons8.com/nolan/64/thumbs-down.png"/><br></br>wack!</button>
+                </div>
+                
+                {/* <button onClick = {() => handlePostDelete(post)}>Delete Blog</button> */}
 
 
                 

@@ -1,7 +1,7 @@
 
 export const fetchPosts = () => {
         return (dispatch) => {
-        fetch('http://localhost:8080/api/post')
+        fetch('https://frozen-mountain-21176.herokuapp.com/api/post')
         .then(response => response.json())    
         .then(posts => {
             dispatch({type:'ALL_POSTS', payload: posts})
@@ -11,7 +11,7 @@ export const fetchPosts = () => {
 
 export const fetchInfo = (user_id) => {
         return (dispatch) => {
-        fetch(`http://localhost:8080/api/v1/users/edit-profile/${user_id}`, {
+        fetch(`https://frozen-mountain-21176.herokuapp.com/api/v1/users/edit-profile/${user_id}`, {
             headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
@@ -26,3 +26,15 @@ export const fetchInfo = (user_id) => {
     }
 }
 
+
+
+export const fetchGoals = () => {
+    return (dispatch) => {
+    fetch('https://sheltered-hamlet-06411.herokuapp.com/api/goals')
+    .then(response => response.json())
+    .then(goals => {
+        dispatch({type:'ALL_GOALS', payload: goals})
+    })
+}
+
+}

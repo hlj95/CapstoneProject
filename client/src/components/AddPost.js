@@ -17,7 +17,7 @@ function AddPost(props) {
     }
 
     const newPost = () => {
-        fetch('http://localhost:8080/api/post', {
+        fetch('https://frozen-mountain-21176.herokuapp.com/api/post', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(post)
@@ -26,15 +26,20 @@ function AddPost(props) {
             .then(result => {
             })
         props.onNewPost()
+        props.history.push('/home')
     }
 
     return(
         <div id="addPostDiv">
-            <input type="hidden" name="user_id" value={id} />
-            <textarea type="text" name="body_text" placeholder="Share Something!" onChange={handleOnChange} />
+            {/* <input type="hidden" name="user_id" value={post.user_id} onChange={handleOnChange} ></input> */}
+            <h2>POST :</h2>
+            <br></br>
+            <textarea type="text" name="body_text" placeholder="It's Okay If They Don't Like It!" onChange={handleOnChange} />
+            <h2>SIGN :</h2>
+            <input type="text" name="image" placeholder="SIGNATURE"onChange={handleOnChange}  />
             <br></br>
             
-            <button onClick={newPost}>Share Post!</button>
+            <button onClick={newPost}> <img src="https://img.icons8.com/nolan/64/sent.png"/><br></br>LETS GO!</button>
         </div>
     )
 }

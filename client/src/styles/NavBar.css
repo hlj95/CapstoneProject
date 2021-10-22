@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 2.5em;
-    margin-bottom: 3em;
-    font-size: x-large;
-    font-weight: 700;
+    margin-top: .7em;
+    margin-bottom: 3.5em;
+    font-size: large;
+    font-weight: 500;
     flex-wrap: wrap;
     color:aliceblue ;
     width: 100%;
@@ -17,17 +17,36 @@ a:link {
 
 .home {
     color: aliceblue;
+    text-align: center;
 }
 .createPost {
     color: aliceblue;
+    text-align: center;
 }
 .profilePage {
     color: aliceblue;
+    text-align: center;
 }
 .editProfile{
-    color: aliceblue
+    color: aliceblue;
+    text-align: center;
 }
+.addaGoal {
+    color: aliceblue;
+    text-align: center;
+}
+.Logout {
+    color: aliceblue;
 
+}
+.LogInMenu {
+    color: aliceblue;
+    text-align:center;
+}
+.RegisterMenu {
+    color: aliceblue;
+    text-align: center;
+}
 
 @media only screen and (min-width:100px) and (max-width:415px) {
     .Nav {

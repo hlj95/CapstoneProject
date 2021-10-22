@@ -24,7 +24,7 @@ export default function Register() {
 
     //handles the sumbission of a new user
     const handleRegister = () => {
-        fetch('http://localhost:8080/api/v1/users/register', {
+        fetch('https://frozen-mountain-21176.herokuapp.com/api/v1/users/register', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

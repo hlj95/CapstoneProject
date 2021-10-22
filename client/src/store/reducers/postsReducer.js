@@ -3,7 +3,8 @@ const initialState = {
     posts:[],
     info:[],
     comments: [],
-    isLoggedIn: false
+    isLoggedIn: false,
+    goals:[]
 }
 
 const reducer = (state = initialState, action) => {
@@ -23,8 +24,13 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 isLoggedIn: true
-
             }
+        case 'ALL_GOALS':
+            return {
+                ...state,
+                goals: action.payload
+            }
+
             default:
                 return state
     }

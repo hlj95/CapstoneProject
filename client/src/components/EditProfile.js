@@ -29,7 +29,7 @@ function EditProfile(props) {
 
     const saveInfo = () => {
         console.log('fired')
-        fetch('http://localhost:8080/api/v1/users/edit-profile', {
+        fetch('https://frozen-mountain-21176.herokuapp.com/api/v1/users/edit-profile', {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(info)
@@ -38,7 +38,7 @@ function EditProfile(props) {
             .then(result => {
             
             })
-        // props.onNewInfo()
+            props.history.push('/home')
     }
 
     return(
@@ -75,7 +75,7 @@ function EditProfile(props) {
             <input type="text" name="link5" value={info.link5} placeholder="InstagramURL" onChange={handleUserChange} />
             <br></br>
             <br></br>
-            <button onClick={saveInfo}>SAVE</button>
+            <button id="save button"onClick={saveInfo}><img src="https://img.icons8.com/nolan/96/save.png"/><br></br>SAVE</button>
             </div>
             
 

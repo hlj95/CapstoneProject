@@ -14,7 +14,7 @@ function Login(props) {
     }
 
     const handleLogin = () => {
-        fetch("http://localhost:8080/api/v1/users/login", {
+        fetch("https://frozen-mountain-21176.herokuapp.com/api/v1/users/login", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
@@ -40,7 +40,7 @@ function Login(props) {
                 <input className="input-fields" onChange={handleOnChange} name="username" type="text" placeholder="Username..."></input>
                 <input className="input-fields" onChange={handleOnChange} name="password" type="password" placeholder="Password..."></input>
                 <br></br>
-                <button type="submit" onClick={handleLogin}>Login</button>
+                <button type="submit" onClick={handleLogin}>LOGIN</button>
             </div>
 
             <br></br>
