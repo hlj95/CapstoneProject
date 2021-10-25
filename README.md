@@ -6,7 +6,7 @@ Screenshots
 ![image](https://user-images.githubusercontent.com/54509750/138731318-7c02ca17-09bd-4d7c-a664-d3db73bd0268.png)
 ![image](https://user-images.githubusercontent.com/54509750/138731354-5977ac9d-92dd-48da-930f-fd4ea554ae73.png)
 
-Live Link: https://portfolio-app.surge.sh/    
+# Live Link: https://portfolio-app.surge.sh/    
 
 How to use: Our app has two authentication interfaces; one is for users and the other one is for admin. Users can register by simply creating a username and password to login to our website. Afterwards, they can immediately start creating a profile page or write a blog on a topic of interest. Only the user will access to their profile page and goals page. However, all users who are registered will have access to the blogs and the news feed.
 
